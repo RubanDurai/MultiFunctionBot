@@ -26,8 +26,8 @@ START_BUTTON = [
     ],
     [
         InlineKeyboardButton(
-            "🔭 Original Repo",
-            url=f"{__gitrepo__}",
+            "Owner",
+            url=f"https://t.me/Rubandurai27",
         )
     ],
 ]
