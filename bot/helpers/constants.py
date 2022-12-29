@@ -25,13 +25,13 @@ USER_TEXT = """🗒️ Documentation for commands available to user's
 
 • /help - Alias command for start
 
-• /chatai - Get result for query using OpenAI - ChatGPT
-
 • /dalle - Generate images from a text prompt using DALLE-Mini
 
 • /bifm - Bypass Short Links using BIFM API
 
 • /direct - Get Direct Link for various Supported URLs
+
+• /bvip - Bypass Short Links using Bypass.vip API
 
 • /bypass - Bypass Various Supported Shortened URLs
 
@@ -49,6 +49,10 @@ USER_TEXT = """🗒️ Documentation for commands available to user's
 
 • /gd - (or use /clone) Get GDrive Links for various Drive File Sharer
 
+• /headfone - Scrape Headfone.co.in to get Direct Links of an Album
+
+• /hungama - Get Download link and Metadata of a Hungama Link
+
 • /ping - Ping the telegram api server.
 
 • /image2pdf - Convert Image to PDF
@@ -60,8 +64,6 @@ USER_TEXT = """🗒️ Documentation for commands available to user's
 • /takess - Take ScreenShot of a Webpage
 
 • /wayback - Generate WayBack of a Webpage
-
-• /pdfdrive - Get Results from PDFDrive
 
 • /paste: Paste the text/document to KatBin
 """
@@ -80,8 +82,6 @@ SUDO_TEXT = """
 • /users: Get details about the Bot Users
 
 • /inspect: Inspect the message and give reply in json format
-
-• /reload_browser - Reload the Browser to refresh the OpenAI`s Website
 """
 
 DEV_TEXT = """
