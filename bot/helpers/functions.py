@@ -7,6 +7,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from bot.config import *
 from bot.logging import LOGGER
 
+SIZE_UNITS = ["B", "KB", "MB", "GB", "TB", "PB"]
+
 
 async def isAdmin(message: Message) -> bool:
     """
@@ -121,6 +123,34 @@ def get_readable_size(size):
         size /= power
         raised_to_pow += 1
     return str(round(size, 2)) + " " + dict_power_n[raised_to_pow] + "B"
+
+
+def get_readable_file_size(size_in_bytes):
+    if size_in_bytes is None:
+        return "0B"
+    index = 0
+    while size_in_bytes >= 1024:
+        size_in_bytes /= 1024
+        index += 1
+    try:
+        return f"{round(size_in_bytes, 2)}{SIZE_UNITS[index]}"
+    except IndexError:
+        return "File too large"
+
+
+def TimeFormatter(milliseconds: int) -> str:
+    seconds, milliseconds = divmod(int(milliseconds), 1000)
+    minutes, seconds = divmod(seconds, 60)
+    hours, minutes = divmod(minutes, 60)
+    days, hours = divmod(hours, 24)
+    tmp = (
+        ((str(days) + "d ") if days else "")
+        + ((str(hours) + "h ") if hours else "")
+        + ((str(minutes) + "m ") if minutes else "")
+        + ((str(seconds) + "s ") if seconds else "")
+        + ((str(milliseconds) + "ms ") if milliseconds else "")
+    )
+    return tmp[:-2]
 
 
 async def multi_api():
