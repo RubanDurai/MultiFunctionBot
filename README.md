@@ -2,7 +2,7 @@
 
 > # Environment Variables
 
-- `CONFIG_ENV_URL` Put your Config File URL so that it works as Bot Config
+- `CONFIG_ENV_URL` Put your Config File URL (pasted in Github Gist) so that it works as Bot Config
 - `API_HASH` Your API Hash from [my.telegram.org](https://my.telegram.org)
 - `API_ID` Your API ID from [my.telegram.org](https://my.telegram.org)
 - `BOT_TOKEN` Your bot token from [@BotFather](https://telegram.dog/BotFather)
@@ -17,9 +17,6 @@
 - `FORCESUB_ENABLE` Set to True if you want to enable ForceSubscribe else set to False/None
 - `FORCESUB_CHANNEL` ID of the Channel you want ForceSubscribe
 - `FORCESUB_CHANNEL_UNAME` Username of the Channel you want ForceSubscribe (without `@`)
-- `GDTOT_CRYPT` Put your GDTot Crypt
-- `UNIFIED_EMAIL` Put your Generated Unified Email
-- `UNIFIED_PASS` Put your Generated Unified Pass
 - `HUBDRIVE_CRYPT` Put your HubDrive Crypt
 - `KATDRIVE_CRYPT` Put your KatDrive Crypt
 - `KOLOP_CRYPT` Put your Kolop Crypt
@@ -31,6 +28,7 @@
 - `Sharerpw_XSRF` Put your Sharer XSRF Token
 - `Sharerpw_laravel` Put your Sharer Laravel Session
 - `SHAREDRIVE_PHPCKS ` Put your ShareDrive.pics PHP Packs Token
+- `TERABOX_COOKIES_URL` Put your TeraBox Cookies link pasted in Github Gist. Get Cookies in [terabox_cookies.txt](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid)
 - `DEFAULT_UPLOAD_HOST` Put the default host number for File Uploading. See the [table](/README.md#upload-hosts) for more Info
 - `UPLOAD_SIZE_LIMIT` Put the Max Size Limit (in GB) for File Upload Function
 - `UPTOBOX_TOKEN` Put your UptoBox Account Token (Free Account works too!)
@@ -47,6 +45,8 @@ start - Bot Start Message
 help - Alias command for start
 dalle - Generate images from a text prompt using DALLE-Mini
 upload - Upload a Telegram File to various Free File Hosting Servers
+mediainfo - (or use /m) Generate mediainfo from Telegram files or direct download links
+screenshot - (or use /ss) Generates video frame screenshot from Telegram files or direct download links
 bifm - Bypass Short Links using BIFM API
 direct - Get Direct Link for various Supported URLs
 bvip - Bypass Short Links using Bypass.vip API
@@ -77,6 +77,8 @@ wayback - Generate WayBack of a Webpage
 	/help - Alias command for start. <br>
     /dalle - Generate images from a text prompt using DALLE-Mini <br>
     /upload - Upload a Telegram File to various Free File Hosting Servers <br>
+    /mediainfo - (or use /m) Generate mediainfo from Telegram files or direct download links <br>
+    /screenshot - (or use /ss) Generates video frame screenshot from Telegram files or direct download links <br>
     /bifm - Bypass Short Links using BIFM API <br>
     /direct - Get Direct Link for various Supported URLs <br>
     /bvip - Bypass Short Links using Bypass.vip API <br>
@@ -159,7 +161,7 @@ wayback - Generate WayBack of a Webpage
 
 
 # Contributions - 
-- Thanks to [Sanjit Sinha](https://github.com/sanjit-sinha) for [Telegram-Bot-Boilerplate](https://github.com/sanjit-sinha/Telegram-Bot-Boilerplate) Template
+- Thanks to [Sanjit Sinha](https://github.com/sanjit-sinha) for [Telegram-Bot-Boilerplate](https://github.com/sanjit-sinha/Telegram-Bot-Boilerplate) Template and [Tg-MediaInfoBot](https://github.com/sanjit-sinha/Tg-MediaInfoBot)
 - Thanks to [Altryne](https://github.com/altryne) for [ChatGPT-Telegram-Bot](https://github.com/altryne/chatGPT-telegram-bot)
 - Thanks to [Yukki Senpai](https://github.com/xcscxr) for Bypassers as well as GDrive Sharer Directs
 - Thanks to [Jack](https://github.com/JohnWickKeanue) for Site Scraping Scripts
