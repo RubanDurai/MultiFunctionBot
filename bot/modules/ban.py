@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, User
 
 # Set up MongoDB client and connect to database
-mongo_client = pymongo.MongoClient("mongodb://localhost:27017/")
+mongo_client = pymongo.MongoClient("DATABASE_URL")
 db = mongo_client["mydatabase"]
 banned_users = db["banned_users"]
 
